@@ -1,0 +1,49 @@
+/* Animação abaixo de itens na navbar */
+li,
+#navttl,
+nav div span {
+    position: relative;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+li::after,
+#navttl::after,
+nav div span::after {
+    background-color: black;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.35s ease 0s;
+    position: absolute;
+}
+
+li:hover::after,
+#navttl:hover::after,
+nav div span:hover::after {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 10rem;
+}
+
+/* Cor de fundo da navbar e footer */
+#ftrbtm,
+#nvbrtop {
+    background-color: rgb(218, 218, 218);
+}
+
+/* Centralização dos itens da navbar*/
+nav div ul li {
+    margin-left: 3.1rem;
+}
+
+@media screen and (max-width:570px) {
+    nav div ul li {
+        margin: 0px;
+    }
+}
