@@ -1,3 +1,12 @@
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/176/927/original/blue-and-white-abstract-background-vector.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /* Animação abaixo de itens na navbar */
 li,
 #navttl,
@@ -26,15 +35,43 @@ nav div span:hover::after {
     width: 100%;
 }
 
+#navttl {
+    color: black;
+}
+
+#abtme {
+    font-weight: bold;
+}
+
+/* Transição de cor no email*/
+
+.shadnglink {
+    color: rgba(0,0,0,.5) !important;
+    transition: 0.4s ease;
+}
+
+.shadnglink:hover {
+    color: black !important;
+}
+
+/* Texto principal */
+
 h1 {
     text-align: center;
     padding-top: 10rem;
 }
 
+.olamundo {
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
 /* Cor de fundo da navbar e footer */
 #ftrbtm,
 #nvbrtop {
-    background-color: rgb(218, 218, 218);
+    background-color: #fff;
+    padding: 0px 1rem;
 }
 
 /* Centralização dos itens da navbar*/
