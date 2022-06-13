@@ -74,6 +74,15 @@ nav div span:hover::after {
     margin-right: auto;
 }
 
+#pfp {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 .contentsidenav {
     padding: 20px;
 }
@@ -81,7 +90,11 @@ nav div span:hover::after {
 .toptxtsdnv {
     margin: 0px;
     padding-bottom: 0.7rem !important;
-}.btmtxtsdnv{color: rgba(255,255,255,0.6);}
+}
+
+.btmtxtsdnv {
+    color: rgba(255, 255, 255, 0.6);
+}
 
 #sdnvhdr {
     background-color: rgba(0, 0, 0, 0.2);
@@ -89,9 +102,12 @@ nav div span:hover::after {
 
 a {
     color: white;
-    
+
 }
-a:hover { color: white; }
+
+a:hover {
+    color: white;
+}
 
 /* Cor de fundo da navbar e footer */
 #ftrbtm,
@@ -105,12 +121,14 @@ nav div ul li {
     margin-left: 3.1rem;
     white-space: nowrap;
 }
+
 .linkside {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     padding-left: 0px;
     padding-right: 0px;
 }
+
 @media screen and (max-width:650px) {
     nav div ul li {
         margin: 0px;
