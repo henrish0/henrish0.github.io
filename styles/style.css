@@ -87,13 +87,31 @@ nav div span:hover::after {
     padding: 20px;
 }
 
-.toptxtsdnv {
+#mainrow {
+    margin-top: 20px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);
+}
+
+.wmain {
+    width: 80% !important;
+}
+
+#maincontent {
+    background-color: rgb(255, 255, 255, 0.75);
+}
+
+.txtsdnv {
     margin: 0px;
     padding-bottom: 0.7rem !important;
+    transition: 0.4s ease;
 }
 
 .btmtxtsdnv {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.txtsdnv:hover {
+    color: black !important;
 }
 
 #sdnvhdr {
@@ -129,16 +147,9 @@ nav div ul li {
     padding-right: 0px;
 }
 
-@media screen and (max-width:650px) {
-    nav div ul li {
-        margin: 0px;
-    }
-}
-
-@media screen and (max-width:600px) {
-    nav div ul li {
-        padding: 0px;
-    }
+.toptxtsdnv {
+    padding-bottom: 0.5rem !important;
+    padding-top: 0.5rem !important;
 }
 
 @media screen and (max-width:575px) {
@@ -147,13 +158,16 @@ nav div ul li {
     }
 }
 
-@media screen and (min-width:575px) {
-    #nvbrtop {
-        height: 10vh;
-    }
-
+@media screen and (min-width:689px) {
     #sidenav {
-        height: 90vh;
+        height: 91vh;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width:689px) {
+    #mainrow {
+        margin-top: 30px;
+        margin-bottom: 40px;
     }
 }
