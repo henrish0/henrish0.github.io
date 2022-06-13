@@ -41,20 +41,9 @@ nav div span:hover::after {
 
 #abtme {
     font-weight: bold;
+    margin-bottom: 0px !important;
 }
 
-#mainrow {
-    height: 89vh;
-}
-
-/* Tamanhos */
-#sidenav {
-    text-align: left;
-    min-width: 250px;
-    max-width: 250px;
-    background-color: #2b6777;
-    color: #fff;
-}
 /* Transição de cor no email*/
 
 .shadnglink {
@@ -66,17 +55,35 @@ nav div span:hover::after {
     color: black !important;
 }
 
-/* Texto principal */
-
-h1 {
-    text-align: center;
-    padding-top: 10rem;
+/* Tamanhos */
+#sidenav {
+    text-align: left;
+    width: 250px;
+    background-color: #47b2ca;
+    color: #fff;
+    max-width: 320px;
+    padding: 0px;
 }
 
-.olamundo {
-    text-align: center;
-    font-size: 2.2rem;
-    font-family: "PT Sans Narrow", sans-serif;
+/* Texto principal */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contentsidenav {
+    padding: 20px;
+}
+
+.toptxtsdnv {
+    margin: 0px;
+    padding-bottom: 0.7rem !important;
+}.btmtxtsdnv{color: rgba(255,255,255,0.6);}
+
+#sdnvhdr {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Cor de fundo da navbar e footer */
@@ -89,10 +96,34 @@ h1 {
 /* Centralização dos itens da navbar*/
 nav div ul li {
     margin-left: 3.1rem;
+    white-space: nowrap;
 }
 
-@media screen and (max-width:570px) {
+@media screen and (max-width:650px) {
     nav div ul li {
         margin: 0px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav div ul li {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    #navttl {
+        margin-left: 0px !important;
+    }
+}
+
+@media screen and (min-width:575px) {
+    #nvbrtop {
+        height: 10vh;
+    }
+
+    #sidenav {
+        height: 90vh;
+        justify-content: center;
     }
 }
