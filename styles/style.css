@@ -4,7 +4,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
 /* Animação abaixo de itens na navbar */
@@ -86,6 +87,12 @@ nav div span:hover::after {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+a {
+    color: white;
+    
+}
+a:hover { color: white; }
+
 /* Cor de fundo da navbar e footer */
 #ftrbtm,
 #nvbrtop {
@@ -98,7 +105,12 @@ nav div ul li {
     margin-left: 3.1rem;
     white-space: nowrap;
 }
-
+.linkside {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 @media screen and (max-width:650px) {
     nav div ul li {
         margin: 0px;
