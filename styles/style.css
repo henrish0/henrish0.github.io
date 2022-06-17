@@ -12,6 +12,7 @@ li {
     position: relative;
     padding: 10px 20px;
     overflow: hidden;
+    /*font-size: 1.53vw;*/
 }
 
 li::after {
@@ -30,12 +31,12 @@ li:hover::after {
 }
 
 .shadnglink {
-    color: rgba(0, 0, 0, .5) !important;
+    color: rgba(0, 0, 0, .5);
     transition: 0.4s ease;
 }
 
 .shadnglink:hover {
-    color: black !important;
+    color: black;
 }
 
 #sidenav {
