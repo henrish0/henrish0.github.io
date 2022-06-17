@@ -8,19 +8,14 @@ body {
     font-size: 14px;
 }
 
-/* Animação abaixo de itens na navbar */
-li,
-#navttl,
-nav div span {
+li {
     position: relative;
     padding: 10px 20px;
     overflow: hidden;
 }
 
-li::after,
-#navttl::after,
-nav div span::after {
-    background-color: black;
+li::after {
+    background-color: #307888;
     content: "";
     width: 0;
     height: 3px;
@@ -30,22 +25,9 @@ nav div span::after {
     position: absolute;
 }
 
-li:hover::after,
-#navttl:hover::after,
-nav div span:hover::after {
+li:hover::after {
     width: 100%;
 }
-
-#navttl {
-    color: black;
-}
-
-#abtme {
-    font-weight: bold;
-    margin-bottom: 0px !important;
-}
-
-/* Transição de cor no email*/
 
 .shadnglink {
     color: rgba(0, 0, 0, .5) !important;
@@ -56,7 +38,6 @@ nav div span:hover::after {
     color: black !important;
 }
 
-/* Tamanhos */
 #sidenav {
     text-align: left;
     width: 250px;
@@ -66,7 +47,9 @@ nav div span:hover::after {
     padding: 0px;
 }
 
-/* Texto principal */
+.icon {
+    padding-right: 10px;
+}
 
 .center {
     display: block;
@@ -81,10 +64,6 @@ nav div span:hover::after {
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-}
-
-.contentsidenav {
-    padding: 20px;
 }
 
 #mainrow {
@@ -120,21 +99,25 @@ nav div span:hover::after {
 
 a {
     color: white;
-
+    text-decoration: none;
 }
 
 a:hover {
     color: white;
 }
 
-/* Cor de fundo da navbar e footer */
-#ftrbtm,
-#nvbrtop {
+embed {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: inline-block;
+}
+
+#ftrbtm {
     background-color: #fff;
     padding: 0px 1rem;
 }
 
-/* Centralização dos itens da navbar*/
 nav div ul li {
     margin-left: 3.1rem;
     white-space: nowrap;
